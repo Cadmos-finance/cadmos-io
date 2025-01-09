@@ -77,13 +77,13 @@ const CadmosHub: React.FC = () => {
       name: 'Cadmos Pay',
       description: 'Remittance and Investment',
       url: 'https://www.cadmospay.com',
-      logoSrc: '/cadmosPay.png'
+      logoSrc: './cadmosPay.png'
     },
     {
       name: 'Cadmos Finance',
       description: 'Tokenized Asset Management',
       url: 'https://www.cadmos.finance',
-      logoSrc: '/cadmosFinance.png'
+      logoSrc: './cadmosFinance.png'
     }
   ];
 
@@ -102,7 +102,7 @@ const CadmosHub: React.FC = () => {
         {/* Logo and Header */}
         <div className="text-center mb-16">
           <img
-            src="/CADMOS-02-large.png"
+            src="./CADMOS-02-large.png"
             alt="Cadmos Logo"
             className="mx-auto mb-8 h-36 w-auto"
           />
