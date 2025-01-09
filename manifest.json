@@ -1,12 +1,12 @@
 {
-  "name": "Cadmos.finance",
+  "name": "Cadmos.IO",
   "short_name": "Cadmos",
   "display": "standalone",
   "orientation": "portrait",
   "purpose": "any maskable",
   "theme_color": "#032ca6",
   "background_color": "#fff",
-  "providedBy": { "name": "Cadmos finance", "url": "https://cadmos.finance" },
+  "providedBy": { "name": "Cadmos IO", "url": "https://cadmos.io" },
   "icons": [
     {
         "src": "favicon/android-chrome-192x192.png",
