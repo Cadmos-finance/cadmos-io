@@ -106,7 +106,7 @@ const CadmosHub: React.FC = () => {
             alt="Cadmos Logo"
             className="mx-auto mb-8 h-36 w-auto"
           />
-          <p className="text-lg text-gray-600">Disintermediating capital markets and cross-border payments globally.</p>
+          <p className="text-lg text-gray-600">Disintermediating capital markets and cross-border payments globally</p>
         </div>
 
         {/* Product Cards */}

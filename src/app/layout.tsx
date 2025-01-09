@@ -41,15 +41,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Cadmos',
-    description: 'Building the future of financial technology',
+    description: 'Disintermediating capital markets and cross-border payments globally',
     url: 'https://cadmos.io',
     siteName: 'Cadmos',
     images: [
       {
-        url: '/og-image.png',
+        url: './favicon/favicon.png',
         width: 1200,
         height: 630,
-        alt: 'Cadmos - Building the future of financial technology',
+        alt: 'Cadmos - Disintermediating capital markets and cross-border payments globally',
       },
     ],
     locale: 'en_US',
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Cadmos',
-    description: 'Building the future of financial technology',
-    images: ['/og-image.png'],
+    description: 'Disintermediating capital markets and cross-border payments globally',
+    images: ['./favicon/favicon.png'],
     creator: '@CadmosIO',
   },
 }
