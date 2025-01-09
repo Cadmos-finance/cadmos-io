@@ -5,8 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/cadmos-io',
-  assetPrefix: '/cadmos-io/',
+
 }
 
 export default nextConfig
