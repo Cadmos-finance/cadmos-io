@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/cadmos-io',
+  assetPrefix: '/cadmos-io/',
+}
 
-export default nextConfig;
+export default nextConfig
