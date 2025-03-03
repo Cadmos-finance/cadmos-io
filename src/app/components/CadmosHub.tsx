@@ -92,7 +92,7 @@ const CadmosHub: React.FC = () => {
     { icon: Github, url: 'https://github.com/Cadmos-finance', label: 'Check our Github' },
     { icon: Linkedin, url: 'https://www.linkedin.com/company/cadmosam', label: 'Connect on LinkedIn' },
     { icon: Instagram, url: 'https://www.instagram.com/cadmos.io', label: 'Follow us on Instagram' },
-    { icon: Youtube, url: 'https://www.youtube.com/@CadmosIO', label: 'Watch on Youtube' }
+    { icon: Youtube, url: 'https://www.youtube.com/@Cadmos_IO', label: 'Watch on Youtube' }
   ];
 
   return (
