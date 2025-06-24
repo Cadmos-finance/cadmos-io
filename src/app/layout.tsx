@@ -1,7 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Script from 'next/script'               // ①  add this
+import SchemaOrg from './SchemaOrg'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -71,61 +72,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-    // ②  organisation schema as a plain object
-  const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Cadmos",
-  "legalName": "Cadmos Ltd.",
-  "url": "https://cadmos.io/",
-  "logo": "https://www.cadmos.io/CADMOS-logo-vertical.png",
-  "sameAs": [
-    "https://cadmos.finance",
-    "https://cadmos.io",
-    "https://cadmospay.com",
-    "https://x.com/CadmosIO",
-    "https://www.linkedin.com/company/cadmosam",
-    "https://github.com/Cadmos-finance",
-    "https://www.youtube.com/@Cadmos_IO",
-    "https://www.instagram.com/cadmos.io"
-  ],
-  "contactPoint": [
-    {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "email": "support@cadmos.finance",
-      "url": "https://cadmos.finance/contact-us"
-    }
-  ],
-  "foundingDate": "2021-06-01",
-  "founders": [
-    { "@type": "Person", "name": "Nassib Boueri" }
-  ],
-  "brand": [
-    {
-      "@type": "Brand",
-      "@id": "https://cadmos.finance/#cadmosFinance",
-      "name": "Cadmos Finance",
-      "url": "https://cadmos.finance"
-    },
-    {
-      "@type": "Brand",
-      "@id": "https://cadmospay.com/#cadmosPay",
-      "name": "Cadmos Pay",
-      "url": "https://cadmospay.com"
-    }
-  ]
-}
   return (
     <html lang="en">
-            <head>
-        {/* ③  inject JSON-LD once per page */}
-        <Script
-          id="org-schema"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
-        />
+      <head>
+        <SchemaOrg />                          {/* ← now rendered server-side */}
       </head>
       <body className={inter.className}>{children}</body>
     </html>
